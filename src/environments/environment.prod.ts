@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  url: "http://kudiska.com",
+  port: "3000"
 };

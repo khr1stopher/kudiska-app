@@ -1,0 +1,52 @@
+<form #segForm="ngForm"  class="w-100 row justify-content-center align-items-center" (submit)="registrar()">
+    
+    <div class="row card__ flex-column col-sm-12 col-md-9 col-lg-6 justify-content-center align-items-center px-5 py-4">
+        <h1 class="text-center p-3">Lanza App</h1>
+        <div class="imagen_k w-100 d-flex justify-content-center align-items-center">
+            <img src="../../assets/kudiska.png" class="w-50 m-auto">
+        </div>
+        <p class="text-center">Bienvenido a <b>Lanza App</b></p>
+        <div class="row mb-0">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate" required>
+              <label for="first_name">Nombre</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate" required>
+              <label for="last_name">Apellido</label>
+            </div>
+        </div>
+        <div class="row mb-0">
+            <div class="input-field col s6">
+              <input id="mail" type="email" class="validate" required>
+              <label for="mail">Correo</label>
+            </div>
+        </div>
+        <div class="row mb-0">
+            <div class="input-field col s6">
+                <input id="icon_telephone" type="number" class="validate" required>
+                <label for="icon_telephone">Telephone</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="icon_telephone" type="number" class="validate" min="18" max="90" required>
+                <label for="icon_telephone">Edad</label>
+            </div>
+        </div>
+        <div class="row mb-0">
+            <div class="input-field col s6">
+                <input id="pass1" type="password" class="validate" required>
+                <label for="pass1">Password</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="pass2" type="password" class="validate" required>
+                <label for="pass2">Password</label>
+            </div>
+        </div>
+        <div class="p-3 w-75">
+            <button type="submit" class="btn px-5 w-100">
+                <b>Registrar</b>
+            </button>
+        </div>
+        <a routerLink="login">tienes una Cuenta?</a>
+    </div>
+</form>

@@ -1,0 +1,29 @@
+<form #segForm="ngForm"  class="w-100 row justify-content-center align-items-center" (submit)="loggear()">
+    
+    <div class="row card__ flex-column col-sm-12 col-md-9 col-lg-6 px-3 justify-content-center align-items-center p-5">
+        <h1 class="text-center p-3">Lanza App</h1>
+        <div class="imagen_k w-100 d-flex justify-content-center align-items-center">
+            <img src="../../assets/kudiska.png" class="w-50 m-auto">
+        </div>
+        <p class="text-center">Bienvenido a <b>Lanza App</b></p>
+        <div class="row w-100 mb-0">
+            <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row w-100">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            <a routerLink="/recover">Olvidaste tu contraseña?</a>
+            </div>
+          </div>
+        <div class="p-3 w-75">
+            <button type="submit" class="btn px-5 w-100">
+                <b>Login</b>
+            </button>
+        </div>
+        <a routerLink="/register">No tienes una Cuenta?</a>
+    </div>
+</form>
